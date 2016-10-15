@@ -1,13 +1,13 @@
 $(function(){
 
 	// 图片放大
-	var img=$(".banner img");
-	var div=$('.banner img-box')
-	div.hover(function(){
-        img.eq(div.index(this)).animate({right:30},300)
-	},function(){
-		img.eq(div.index(this)).animate({right:14},300)
-	})
+	// var img=$(".banner img");
+	// var div=$('.banner img-box')
+	// div.hover(function(){
+ //        img.eq(div.index(this)).animate({},500)
+	// },function(){
+	// 	img.eq(div.index(this)).animate({},500)
+	// })
 	
 	
 	// 图片左移
