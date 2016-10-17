@@ -17,7 +17,6 @@ a{
 	text-decoration: none;
 	color: #000;
 }
-
 .clf:before,.clf:after{
 	content: "";
 	display: block;
@@ -176,54 +175,170 @@ a{
 }
 /*banner*/
 .banner{
-	width: 100%;
-	height: auto;
-	margin: 0 auto;
+     height: auto;
+     min-width: 955px;
+     overflow: hidden;
+     position: relative;
 }
-.img-box img{
-	width: 100%;
-	height: 100%;
+.banner img{
+	display: block;line-height: 0;
+}
+
+.banner:after{
+	content: "";
+	height: 0;
+	width: 0;
 	display: block;
-}
-.banner .img-box{
-	position: relative;
-	float: left;
-	overflow: hidden;
+	clear: both;
 }
 .banner-left{
 	width: 60%;
-	height: auto;
-	float: left;
-}
-.banner-left .img-box{
-	width: 100%;
-	height: 100%;
-}
-
-.banner-right{
-	width: 40%;
-	float: left;
-}
-.banner-rigth .img-box{
+	height:100%;
 	float: left;
 	position: relative;
+	overflow: hidden;
 }
-.banner-right .img-box:nth-child(1){
+.banner:before{
+	content: "";
+	width: 0;
+	height: 0;
+	display: block;
+	clear:both;
+}
+
+.image-list:hover img{
+	display: block;
+	width:100%;
+	transform:scale(1.2,1.2);
+}
+.images{
+	width:400%;
+	height: auto;
+	position:relative;
+	top: 0;
+	float: left;
+}
+.image-list{
+	width:25%;
+	overflow: hidden;
+	float: left;
+}
+.image-list a{
+	display: inline-block;
+	float: left;
+	overflow: hidden;
 	width: 100%;
-	height: 60%;
 }
-.banner-right .img-box:nth-child(2){
+.banner-left img{
+	width: 100%;
+	float: left;
+	display: inline-block;
+	overflow: hidden;
+	transition:all 2s ease-out;
+}
+.banner-right{
+	width: 40%;
+	float: right;
+}
+.banner-right a{
+	display: block;
+}
+.banner-right a:nth-child(1){
+   width: 100%;
+}
+.image-list2{
+	overflow: hidden;
+}
+.image-list2:hover img{
+
+	transform:scale(1.2,1.2);
+}
+.image-list3{
 	width: 50%;
-	height: 40%;
+	float: left;
+	overflow: hidden;
 }
-.banner-right .img-box:nth-child(3){
+.image-list3:hover img{
+
+	transform:scale(1.2,1.2);
+}
+.banner-right a:nth-child(2){
 	width: 50%;
-	height: 40%;
+	float: left;
 }
-@media screen and (max-width: 900px){
-	.banner{
-		width: 900px;
-	}
+.banner-right a:nth-child(3){
+	width: 50%;
+	float: left;
+}
+.banner-right img:nth-child(1){
+	width: 100%;
+	transition:all 2s ease-out;
+}
+.banner-right img:nth-child(2){
+	width: 50%;
+	transition:all 2s ease-out;
+}
+.banner-right img:nth-child(3){
+	width: 50%;
+	transition:all 2s ease-out;
+}
+.btn{
+	width:92%;
+	height:60px;
+	position: absolute;
+	top: 50%;
+	margin-top: -50px;
+	padding: 0 30px;
+	z-index: 5;
+}
+.btn:hover{
+	cursor: pointer;
+}
+.btn div{
+	width: 61px;
+	height:60px;
+	border-radius: 50%;
+	background: #000;
+	opacity: .5;
+	font-size: 30px;
+	text-align: center;
+	line-height: 60px;
+	color: #fff;
+}
+.btn .btn-left{
+	float: left;
+	background: url(../img/dir.png)no-repeat;
+}
+.btn .btn-right{
+	float: right;
+	background: url(../img/dir.png)no-repeat -90px;
+}
+
+.btns{
+	width:100%;
+	height: 10px;
+	position: absolute;
+	bottom: 27px;
+	z-index: 5;
+}
+.btns-x{
+	width:90px;
+	height: 100%;
+	margin: 0 auto;
+}
+.banner-btn{
+	width:10px;
+	height:10px;
+	margin: 0 5px;
+	border-radius: 50%;
+	opacity: 0.3;
+	background-color: #ccc;
+	float: left;
+	cursor: pointer;
+}
+.hot{
+	background: #fff;
+	opacity: 0.8;
 }
 /*banner结束*/
 /* main1开始 */
@@ -1056,7 +1171,7 @@ a{
 /*底部开始*/
 .foot-box{
 	width: 100%;
-	height: 300px;
+	height: 310px;
 	background: #222;
 	font-size: 12px;
 	min-width: 955px
